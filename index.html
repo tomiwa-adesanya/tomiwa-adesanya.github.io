@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tomiwa G. Adesanya | Desktop Application Developer</title>
+  <meta name="description" content="Tomiwa G. Adesanya builds desktop software for Windows, Linux and macOS and ships it all the way: interface, backend, build, installer, release and updates.">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="canonical" href="https://tomiwaadesanya.me/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tomiwaadesanya.me/">
+  <meta property="og:title" content="Tomiwa G. Adesanya | Desktop Application Developer">
+  <meta property="og:description" content="Desktop software for Windows, Linux and macOS, shipped as proper installers.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@_tomiwaadesanya">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Tomiwa G. Adesanya, home">
+        <span class="brand__mark" aria-hidden="true">TA</span>
+        <span class="brand__name">Tomiwa G. Adesanya</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#process">Process</a>
+        <a href="#hire">Hire</a>
+      </nav>
+      <a class="btn btn--sm btn--primary" href="#hire">Start a project</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="status"><span class="dot" aria-hidden="true"></span>Available for desktop application work</p>
+          <h1>Desktop software, shipped all the way to the installer.</h1>
+          <p class="lede">
+            I'm Tomiwa, a desktop application developer. I design and build fast, native-feeling apps for
+            Windows, Linux and macOS, and I take care of everything that turns code into a product people can
+            rely on: installers, releases and updates.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#hire">Start a project</a>
+            <a class="btn btn--ghost" href="#work">See shipped apps</a>
+          </div>
+          <dl class="facts">
+            <div><dt>Ships</dt><dd>.exe installers, .deb, .pkg, portable builds</dd></div>
+            <div><dt>Builds with</dt><dd>Python, pywebview, Nuitka, C/C++</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="win installer" id="installer">
+            <div class="win__bar">
+              <span class="win__title">Setup &mdash; tomiwa-adesanya</span>
+              <span class="win__ctl"><i class="ctl-min"></i><i class="ctl-max"></i><i class="ctl-close"></i></span>
+            </div>
+            <div class="installer__body">
+              <div class="installer__head">
+                <div class="installer__icon">TA</div>
+                <div>
+                  <p class="installer__h">Installing tomiwa-adesanya</p>
+                  <p class="installer__sub">Desktop software &middot; Backend &middot; Embedded</p>
+                </div>
+              </div>
+              <div class="progress"><span class="progress__bar"></span></div>
+              <ol class="log">
+                <li data-step>Resolving dependencies<b>ok</b></li>
+                <li data-step>Compiling with Nuitka<b>ok</b></li>
+                <li data-step>Building Windows installer<b>ok</b></li>
+                <li data-step>Packaging .deb for Debian / Ubuntu<b>ok</b></li>
+                <li data-step>Writing SHA256SUMS<b>ok</b></li>
+                <li data-step>Testing on a clean machine<b>ok</b></li>
+              </ol>
+              <div class="installer__foot">
+                <span class="installer__done">Installed. Ready to launch.</span>
+                <span class="fakebtn">Finish</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work" aria-labelledby="work-h">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">01 &mdash; Selected work</p>
+          <h2 id="work-h">Apps I've designed, built and shipped</h2>
+          <p class="section__sub">Each one is a real release you can install. Download links come straight from the latest GitHub release.</p>
+        </header>
+        <div class="projects" id="projects"></div>
+
+        <div class="archive">
+          <h3 class="archive__h">From the archive</h3>
+          <div class="archive__grid" id="archive"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="section" id="stack" aria-labelledby="stack-h">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">02 &mdash; Tech stack</p>
+          <h2 id="stack-h">How an app I ship is put together</h2>
+          <p class="section__sub">Every layer of a typical project, from the interface your users see to the installer they download.</p>
+        </header>
+
+        <div class="stackgrid">
+          <ol class="layers" aria-label="Desktop application layers">
+            <li class="layer">
+              <div class="layer__label"><span class="layer__n">01</span><div><h3>Interface</h3><p>What your users see and touch</p></div></div>
+              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/html5.svg)"></i>HTML</li><li><i class="ico" style="--i:url(../assets/icons/css.svg)"></i>CSS</li><li><i class="ico" style="--i:url(../assets/icons/javascript.svg)"></i>JavaScript</li><li><i class="ico" style="--i:url(../assets/icons/typescript.svg)"></i>TypeScript</li><li><i class="ico" style="--i:url(../assets/icons/react.svg)"></i>React</li></ul>
+            </li>
+            <li class="layer">
+              <div class="layer__label"><span class="layer__n">02</span><div><h3>Native window</h3><p>A real OS window around the interface</p></div></div>
+              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/pywebview.svg)"></i>pywebview</li><li><i class="ico" style="--i:url(../assets/icons/windows.svg)"></i>WebView2</li><li><i class="ico" style="--i:url(../assets/icons/linux.svg)"></i>WebKitGTK</li><li><i class="ico" style="--i:url(../assets/icons/apple.svg)"></i>WebKit</li></ul>
+            </li>
+            <li class="layer">
+              <div class="layer__label"><span class="layer__n">03</span><div><h3>Application core</h3><p>Business logic, APIs and real-time work</p></div></div>
+              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/python.svg)"></i>Python</li><li><i class="ico" style="--i:url(../assets/icons/flask.svg)"></i>Flask</li><li><i class="ico" style="--i:url(../assets/icons/fastapi.svg)"></i>FastAPI</li><li><i class="ico" style="--i:url(../assets/icons/sockets.svg)"></i>WebSockets</li></ul>
+            </li>
+            <li class="layer">
+              <div class="layer__label"><span class="layer__n">04</span><div><h3>Data</h3><p>Local-first storage, server databases when needed</p></div></div>
+              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/sqlite.svg)"></i>SQLite</li><li><i class="ico" style="--i:url(../assets/icons/mysql.svg)"></i>MySQL</li></ul>
+            </li>
+            <li class="layer">
+              <div class="layer__label"><span class="layer__n">05</span><div><h3>Build &amp; release</h3><p>Compiled, packaged and published</p></div></div>
+              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/package.svg)"></i>Nuitka</li><li><i class="ico" style="--i:url(../assets/icons/windows.svg)"></i>Inno Setup</li><li><i class="ico" style="--i:url(../assets/icons/debian.svg)"></i>Debian .deb</li><li><i class="ico" style="--i:url(../assets/icons/apple.svg)"></i>macOS .pkg</li><li><i class="ico" style="--i:url(../assets/icons/package.svg)"></i>GitHub Releases</li></ul>
+            </li>
+            <li class="layer layer--targets">
+              <div class="layer__label"><span class="layer__n">&rarr;</span><div><h3>Runs on</h3><p>One codebase, a native build for each</p></div></div>
+              <ul class="targets">
+                <li><i class="ico" style="--i:url(../assets/icons/windows.svg)"></i>Windows</li>
+                <li><i class="ico" style="--i:url(../assets/icons/linux.svg)"></i>Linux</li>
+                <li><i class="ico" style="--i:url(../assets/icons/apple.svg)"></i>macOS</li>
+              </ul>
+            </li>
+          </ol>
+
+          <aside class="beyond">
+            <article class="panel beyond__card">
+              <h3>Backend services</h3>
+              <p>APIs, user accounts, licence keys and payment webhooks for apps that need a server behind them.</p>
+              <ul class="tools tools--sm"><li><i class="ico" style="--i:url(../assets/icons/fastapi.svg)"></i>FastAPI</li><li><i class="ico" style="--i:url(../assets/icons/flask.svg)"></i>Flask</li><li><i class="ico" style="--i:url(../assets/icons/mysql.svg)"></i>SQL</li></ul>
+            </article>
+            <article class="panel beyond__card">
+              <h3>AI features</h3>
+              <p>Language-model features built into desktop tools, with the service that powers them.</p>
+              <ul class="tools tools--sm"><li><i class="ico" style="--i:url(../assets/icons/python.svg)"></i>Python</li><li><i class="ico" style="--i:url(../assets/icons/sockets.svg)"></i>LLM APIs</li></ul>
+            </article>
+            <article class="panel beyond__card">
+              <h3>Embedded</h3>
+              <p>Microcontroller firmware, sensors and device-to-server telemetry.</p>
+              <ul class="tools tools--sm"><li><i class="ico" style="--i:url(../assets/icons/c.svg)"></i>C</li><li><i class="ico" style="--i:url(../assets/icons/cplusplus.svg)"></i>C++</li><li><i class="ico" style="--i:url(../assets/icons/arduino.svg)"></i>Arduino</li><li><i class="ico" style="--i:url(../assets/icons/raspberrypi.svg)"></i>Raspberry Pi</li></ul>
+            </article>
+            <article class="panel beyond__card">
+              <h3>Quality &amp; tooling</h3>
+              <ul class="tools tools--sm"><li><i class="ico" style="--i:url(../assets/icons/pytest.svg)"></i>pytest</li><li><i class="ico" style="--i:url(../assets/icons/ruff.svg)"></i>ruff</li><li><i class="ico" style="--i:url(../assets/icons/git.svg)"></i>Git</li><li><i class="ico" style="--i:url(../assets/icons/linux.svg)"></i>Linux</li></ul>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process" aria-labelledby="process-h">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">03 &mdash; Process</p>
+          <h2 id="process-h">How a project runs</h2>
+          <p class="section__sub">A clear plan up front, something you can install early, and no surprises at the end.</p>
+        </header>
+
+        <ol class="phases">
+          <li class="phase">
+            <span class="phase__n">01</span>
+            <h3>Discovery</h3>
+            <p>A short call to understand who the app is for, what it must do on day one, and what can wait.</p>
+            <p class="phase__out"><b>You get</b> a summary of requirements and open questions</p>
+          </li>
+          <li class="phase">
+            <span class="phase__n">02</span>
+            <h3>Scope &amp; quote</h3>
+            <p>A written plan broken into milestones, each with a deliverable, a price and a date.</p>
+            <p class="phase__out"><b>You get</b> a fixed quote and timeline to approve</p>
+          </li>
+          <li class="phase">
+            <span class="phase__n">03</span>
+            <h3>Design</h3>
+            <p>Screens and flows agreed before the heavy engineering starts, so changes are cheap.</p>
+            <p class="phase__out"><b>You get</b> a clickable prototype</p>
+          </li>
+          <li class="phase">
+            <span class="phase__n">04</span>
+            <h3>Build</h3>
+            <p>Work lands milestone by milestone, as real builds you install and try on your own machines.</p>
+            <p class="phase__out"><b>You get</b> installable builds and weekly updates</p>
+          </li>
+          <li class="phase">
+            <span class="phase__n">05</span>
+            <h3>Launch &amp; handover</h3>
+            <p>Final installers for every platform you need, published and documented.</p>
+            <p class="phase__out"><b>You get</b> installers, source code and documentation</p>
+          </li>
+        </ol>
+
+        <div class="includes panel">
+          <h3>Every project includes</h3>
+          <ul>
+            <li><b>Installers for each platform</b><span>Setup files and portable builds, tested on clean machines.</span></li>
+            <li><b>Full code ownership</b><span>The source is yours, in your repository, from the first commit.</span></li>
+            <li><b>An update path</b><span>Versioned releases, so users upgrade without reinstalling.</span></li>
+            <li><b>Documentation</b><span>Written so another developer could pick the project up.</span></li>
+            <li><b>Post-launch support</b><span>Bug fixes after release, and ongoing support if you want it.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hire -->
+    <section class="section" id="hire" aria-labelledby="hire-h">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">04 &mdash; Work with me</p>
+          <h2 id="hire-h">Tell me about your project</h2>
+          <p class="section__sub">A new desktop app, an existing one that needs work, or a contract role. Share as much or as little as you have and I'll reply within two working days.</p>
+        </header>
+
+        <div class="hire">
+          <form class="win form" id="hire-form" novalidate>
+            <div class="win__bar">
+              <span class="win__title">New project request</span>
+              <span class="win__ctl"><i class="ctl-min"></i><i class="ctl-max"></i><i class="ctl-close"></i></span>
+            </div>
+            <div class="form__body">
+              <div class="row">
+                <label class="field">
+                  <span>Name <em>*</em></span>
+                  <input name="name" autocomplete="name" required>
+                </label>
+                <label class="field">
+                  <span>Email <em>*</em></span>
+                  <input name="email" type="email" autocomplete="email" required>
+                </label>
+              </div>
+              <label class="field">
+                <span>Company or organisation</span>
+                <input name="company" autocomplete="organization">
+              </label>
+
+              <fieldset class="field">
+                <legend>What do you need? <em>*</em></legend>
+                <div class="options" data-required-group>
+                  <label class="opt"><input type="radio" name="service" value="New desktop app" required><span>New desktop app</span></label>
+                  <label class="opt"><input type="radio" name="service" value="Improve or port an existing app"><span>Improve or port an existing app</span></label>
+                  <label class="opt"><input type="radio" name="service" value="Packaging, installers and releases"><span>Packaging &amp; installers</span></label>
+                  <label class="opt"><input type="radio" name="service" value="Backend, API or licensing"><span>Backend / API / licensing</span></label>
+                  <label class="opt"><input type="radio" name="service" value="AI feature in a desktop app"><span>AI feature</span></label>
+                  <label class="opt"><input type="radio" name="service" value="Contract or full-time role"><span>Contract or role</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Target platforms</legend>
+                <div class="options options--inline">
+                  <label class="opt"><input type="checkbox" name="platforms" value="Windows"><span>Windows</span></label>
+                  <label class="opt"><input type="checkbox" name="platforms" value="Linux"><span>Linux</span></label>
+                  <label class="opt"><input type="checkbox" name="platforms" value="macOS"><span>macOS</span></label>
+                  <label class="opt"><input type="checkbox" name="platforms" value="Not sure"><span>Not sure yet</span></label>
+                </div>
+              </fieldset>
+
+              <div class="row">
+                <label class="field">
+                  <span>Budget (USD)</span>
+                  <select name="budget">
+                    <option value="">Select a range</option>
+                    <option>Under $1,000</option>
+                    <option>$1,000 to $3,000</option>
+                    <option>$3,000 to $8,000</option>
+                    <option>$8,000 to $20,000</option>
+                    <option>$20,000+</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Timeline</span>
+                  <select name="timeline">
+                    <option value="">Select a timeline</option>
+                    <option>As soon as possible</option>
+                    <option>Within 1 month</option>
+                    <option>1 to 3 months</option>
+                    <option>3+ months</option>
+                    <option>Flexible</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Project details <em>*</em></span>
+                <textarea name="details" rows="6" required minlength="20" placeholder="What should it do, who uses it, and what does done look like? Links to specs, designs or an existing app help."></textarea>
+              </label>
+
+              <label class="check">
+                <input type="checkbox" name="nda" value="Yes">
+                <span>I'd like an NDA before sharing details</span>
+              </label>
+
+              <!-- Spam trap: hidden from people, filled in by bots. -->
+              <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="form__foot">
+                <p class="form__note" id="form-note">Your details are only used to reply to this request. Nothing is stored on this site.</p>
+                <button class="btn btn--primary" type="submit">Send request</button>
+              </div>
+              <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <aside class="hire__aside">
+            <div class="panel steps">
+              <h3>Good to know</h3>
+              <ul class="facts-list">
+                <li><b>Reply time</b><span>Within two working days</span></li>
+                <li><b>Engagements</b><span>Fixed-price projects, hourly work or contract roles</span></li>
+                <li><b>Clients</b><span>Startups, small businesses and individual founders, worldwide</span></li>
+                <li><b>Confidential</b><span>Happy to sign an NDA before you share details</span></li>
+              </ul>
+            </div>
+            <div class="panel direct">
+              <h3>Prefer email?</h3>
+              <a class="direct__mail" id="direct-mail" href="#"></a>
+              <ul class="direct__links" id="socials"></ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="statusbar">
+    <div class="wrap statusbar__inner">
+      <span><span class="dot" aria-hidden="true"></span>Available for work</span>
+      <span class="statusbar__mid">Hosted on GitHub Pages</span>
+      <span>&copy; <span id="year"></span> Tomiwa G. Adesanya</span>
+    </div>
+  </footer>
+
+  <dialog class="viewer" id="viewer" aria-label="Media viewer">
+    <div class="viewer__frame" id="viewer-frame"></div>
+    <button class="viewer__close" type="button" aria-label="Close" data-close>&times;</button>
+  </dialog>
+
+  <script src="js/data.js?v=5"></script>
+  <script src="js/main.js?v=5"></script>
+</body>
+</html>
