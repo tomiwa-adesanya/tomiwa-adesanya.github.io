@@ -485,7 +485,7 @@
         body: JSON.stringify({
           access_key: web3formsKey,
           subject,
-          from_name: "tomiwaadesanya.me",
+          from_name: "tomiwaadesanya.tech",
           replyto: d.email,
           botcheck: false,
           ...d,

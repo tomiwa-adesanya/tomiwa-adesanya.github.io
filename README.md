@@ -1,4 +1,4 @@
-# tomiwaadesanya.me
+# tomiwaadesanya.tech
 
 Portfolio of Tomiwa G. Adesanya, desktop application developer.
 
