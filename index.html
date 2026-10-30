@@ -14,10 +14,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@_tomiwaadesanya">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://api.github.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -123,30 +122,30 @@
           <ol class="layers" aria-label="Desktop application layers">
             <li class="layer">
               <div class="layer__label"><span class="layer__n">01</span><div><h3>Interface</h3><p>What your users see and touch</p></div></div>
-              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/html5.svg)"></i>HTML</li><li><i class="ico" style="--i:url(../assets/icons/css.svg)"></i>CSS</li><li><i class="ico" style="--i:url(../assets/icons/javascript.svg)"></i>JavaScript</li><li><i class="ico" style="--i:url(../assets/icons/typescript.svg)"></i>TypeScript</li><li><i class="ico" style="--i:url(../assets/icons/react.svg)"></i>React</li></ul>
+              <ul class="tools"><li><i class="ico i-html5"></i>HTML</li><li><i class="ico i-css"></i>CSS</li><li><i class="ico i-javascript"></i>JavaScript</li><li><i class="ico i-typescript"></i>TypeScript</li><li><i class="ico i-react"></i>React</li></ul>
             </li>
             <li class="layer">
               <div class="layer__label"><span class="layer__n">02</span><div><h3>Native window</h3><p>A real OS window around the interface</p></div></div>
-              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/pywebview.svg)"></i>pywebview</li><li><i class="ico" style="--i:url(../assets/icons/windows.svg)"></i>WebView2</li><li><i class="ico" style="--i:url(../assets/icons/linux.svg)"></i>WebKitGTK</li><li><i class="ico" style="--i:url(../assets/icons/apple.svg)"></i>WebKit</li></ul>
+              <ul class="tools"><li><i class="ico i-pywebview"></i>pywebview</li><li><i class="ico i-windows"></i>WebView2</li><li><i class="ico i-linux"></i>WebKitGTK</li><li><i class="ico i-apple"></i>WebKit</li></ul>
             </li>
             <li class="layer">
               <div class="layer__label"><span class="layer__n">03</span><div><h3>Application core</h3><p>Business logic, APIs and real-time work</p></div></div>
-              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/python.svg)"></i>Python</li><li><i class="ico" style="--i:url(../assets/icons/flask.svg)"></i>Flask</li><li><i class="ico" style="--i:url(../assets/icons/fastapi.svg)"></i>FastAPI</li><li><i class="ico" style="--i:url(../assets/icons/sockets.svg)"></i>WebSockets</li></ul>
+              <ul class="tools"><li><i class="ico i-python"></i>Python</li><li><i class="ico i-flask"></i>Flask</li><li><i class="ico i-fastapi"></i>FastAPI</li><li><i class="ico i-sockets"></i>WebSockets</li></ul>
             </li>
             <li class="layer">
               <div class="layer__label"><span class="layer__n">04</span><div><h3>Data</h3><p>Local-first storage, server databases when needed</p></div></div>
-              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/sqlite.svg)"></i>SQLite</li><li><i class="ico" style="--i:url(../assets/icons/mysql.svg)"></i>MySQL</li></ul>
+              <ul class="tools"><li><i class="ico i-sqlite"></i>SQLite</li><li><i class="ico i-mysql"></i>MySQL</li></ul>
             </li>
             <li class="layer">
               <div class="layer__label"><span class="layer__n">05</span><div><h3>Build &amp; release</h3><p>Compiled, packaged and published</p></div></div>
-              <ul class="tools"><li><i class="ico" style="--i:url(../assets/icons/package.svg)"></i>Nuitka</li><li><i class="ico" style="--i:url(../assets/icons/windows.svg)"></i>Inno Setup</li><li><i class="ico" style="--i:url(../assets/icons/debian.svg)"></i>Debian .deb</li><li><i class="ico" style="--i:url(../assets/icons/apple.svg)"></i>macOS .pkg</li><li><i class="ico" style="--i:url(../assets/icons/package.svg)"></i>GitHub Releases</li></ul>
+              <ul class="tools"><li><i class="ico i-package"></i>Nuitka</li><li><i class="ico i-windows"></i>Inno Setup</li><li><i class="ico i-debian"></i>Debian .deb</li><li><i class="ico i-apple"></i>macOS .pkg</li><li><i class="ico i-package"></i>GitHub Releases</li></ul>
             </li>
             <li class="layer layer--targets">
               <div class="layer__label"><span class="layer__n">&rarr;</span><div><h3>Runs on</h3><p>One codebase, a native build for each</p></div></div>
               <ul class="targets">
-                <li><i class="ico" style="--i:url(../assets/icons/windows.svg)"></i>Windows</li>
-                <li><i class="ico" style="--i:url(../assets/icons/linux.svg)"></i>Linux</li>
-                <li><i class="ico" style="--i:url(../assets/icons/apple.svg)"></i>macOS</li>
+                <li><i class="ico i-windows"></i>Windows</li>
+                <li><i class="ico i-linux"></i>Linux</li>
+                <li><i class="ico i-apple"></i>macOS</li>
               </ul>
             </li>
           </ol>
@@ -155,21 +154,21 @@
             <article class="panel beyond__card">
               <h3>Backend services</h3>
               <p>APIs, user accounts, licence keys and payment webhooks for apps that need a server behind them.</p>
-              <ul class="tools tools--sm"><li><i class="ico" style="--i:url(../assets/icons/fastapi.svg)"></i>FastAPI</li><li><i class="ico" style="--i:url(../assets/icons/flask.svg)"></i>Flask</li><li><i class="ico" style="--i:url(../assets/icons/mysql.svg)"></i>SQL</li></ul>
+              <ul class="tools tools--sm"><li><i class="ico i-fastapi"></i>FastAPI</li><li><i class="ico i-flask"></i>Flask</li><li><i class="ico i-mysql"></i>SQL</li></ul>
             </article>
             <article class="panel beyond__card">
               <h3>AI features</h3>
               <p>Language-model features built into desktop tools, with the service that powers them.</p>
-              <ul class="tools tools--sm"><li><i class="ico" style="--i:url(../assets/icons/python.svg)"></i>Python</li><li><i class="ico" style="--i:url(../assets/icons/sockets.svg)"></i>LLM APIs</li></ul>
+              <ul class="tools tools--sm"><li><i class="ico i-python"></i>Python</li><li><i class="ico i-sockets"></i>LLM APIs</li></ul>
             </article>
             <article class="panel beyond__card">
               <h3>Embedded</h3>
               <p>Microcontroller firmware, sensors and device-to-server telemetry.</p>
-              <ul class="tools tools--sm"><li><i class="ico" style="--i:url(../assets/icons/c.svg)"></i>C</li><li><i class="ico" style="--i:url(../assets/icons/cplusplus.svg)"></i>C++</li><li><i class="ico" style="--i:url(../assets/icons/arduino.svg)"></i>Arduino</li><li><i class="ico" style="--i:url(../assets/icons/raspberrypi.svg)"></i>Raspberry Pi</li></ul>
+              <ul class="tools tools--sm"><li><i class="ico i-c"></i>C</li><li><i class="ico i-cplusplus"></i>C++</li><li><i class="ico i-arduino"></i>Arduino</li><li><i class="ico i-raspberrypi"></i>Raspberry Pi</li></ul>
             </article>
             <article class="panel beyond__card">
               <h3>Quality &amp; tooling</h3>
-              <ul class="tools tools--sm"><li><i class="ico" style="--i:url(../assets/icons/pytest.svg)"></i>pytest</li><li><i class="ico" style="--i:url(../assets/icons/ruff.svg)"></i>ruff</li><li><i class="ico" style="--i:url(../assets/icons/git.svg)"></i>Git</li><li><i class="ico" style="--i:url(../assets/icons/linux.svg)"></i>Linux</li></ul>
+              <ul class="tools tools--sm"><li><i class="ico i-pytest"></i>pytest</li><li><i class="ico i-ruff"></i>ruff</li><li><i class="ico i-git"></i>Git</li><li><i class="ico i-linux"></i>Linux</li></ul>
             </article>
           </aside>
         </div>
@@ -365,7 +364,7 @@
     <button class="viewer__close" type="button" aria-label="Close" data-close>&times;</button>
   </dialog>
 
-  <script src="js/data.js?v=5"></script>
-  <script src="js/main.js?v=5"></script>
+  <script src="js/data.js?v=7"></script>
+  <script src="js/main.js?v=7"></script>
 </body>
 </html>

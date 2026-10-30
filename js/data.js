@@ -12,7 +12,7 @@
 
 window.SITE = {
   owner: "tomiwa-adesanya",
-  email: "a.tomiwa.tech@gmail.com",
+  email: "hello@tomiwaadesanya.tech",
 
   // Paste a Web3Forms access key here to send the hire form straight to your inbox.
   // Leave empty and the form falls back to opening the visitor's email app.
@@ -87,7 +87,7 @@ window.PROJECTS = [
     platforms: ["Windows", "Linux"],
     links: { repo: "https://github.com/tomiwa-adesanya/markdown-notebook" },
     media: [
-      { type: "video", film: true, src: "assets/projects/markdown-notebook/film.mp4", poster: "assets/projects/markdown-notebook/film-poster.webp", label: "Film" },
+      { type: "youtube", id: "pPcu0cHe3WA", poster: "assets/projects/markdown-notebook/film-poster.webp", label: "Film" },
       {
         type: "gallery",
         images: [
@@ -128,9 +128,9 @@ window.PROJECTS = [
     ],
     stack: [],
     platforms: [],
-    links: { demo: "mailto:falconmailer.tech@gmail.com?subject=FalconMailer%20demo%20request" },
+    links: { demo: "mailto:hello@tomiwaadesanya.tech?subject=FalconMailer%20demo%20request" },
     media: [
-      { type: "video", film: true, src: "assets/projects/falconmailer/film.mp4", poster: "assets/projects/falconmailer/film-poster.webp", label: "Film" },
+      { type: "youtube", id: "tdB14PMZmAs", poster: "assets/projects/falconmailer/film-poster.webp", label: "Film" },
     ],
     release: null,
   },

@@ -154,7 +154,7 @@
   function renderMediaItem(m, p, idx) {
     if (m.type === "youtube") {
       return `<div class="stage stage--film">
-          <img src="${esc(m.poster)}" alt="${esc(p.name)} film" loading="lazy">
+          <img src="${esc(m.poster)}" alt="${esc(p.name)} film" loading="lazy" decoding="async">
           <button class="play" type="button" data-youtube="${esc(m.id)}" aria-label="Play the ${esc(p.name)} film">
             <span class="play__btn">${ICON.play}Play</span>
           </button>
@@ -162,7 +162,7 @@
     }
     if (m.type === "video" && m.film) {
       return `<div class="stage stage--film">
-          <img src="${esc(m.poster)}" alt="${esc(p.name)} film" loading="lazy">
+          <img src="${esc(m.poster)}" alt="${esc(p.name)} film" loading="lazy" decoding="async">
           <button class="play" type="button" data-film="${esc(m.src)}" aria-label="Play the ${esc(p.name)} film">
             <span class="play__btn">${ICON.play}Play</span>
           </button>
@@ -232,7 +232,7 @@
     return `
       <article class="project win" id="project-${esc(p.id)}" aria-labelledby="name-${esc(p.id)}">
         <div class="win__bar">
-          <span class="win__title">${p.icon ? `<img src="${esc(p.icon)}" alt="">` : ""}<strong>${esc(p.name)}</strong>${fb ? ` &mdash; <span data-ver>${esc(fb.tag)}</span>` : ""}</span>
+          <span class="win__title">${p.icon ? `<img src="${esc(p.icon)}" alt="" width="18" height="18" loading="lazy" decoding="async">` : ""}<strong>${esc(p.name)}</strong>${fb ? ` &mdash; <span data-ver>${esc(fb.tag)}</span>` : ""}</span>
           <span class="project__bar-meta">${barTags}</span>
           ${CTL}
         </div>
@@ -240,7 +240,7 @@
         <div class="project__info">
           <div class="project__main">
             <div class="project__name">
-              ${p.icon ? `<img src="${esc(p.icon)}" alt="" width="48" height="48">` : ""}
+              ${p.icon ? `<img src="${esc(p.icon)}" alt="" width="48" height="48" loading="lazy" decoding="async">` : ""}
               <div><h3 id="name-${esc(p.id)}">${esc(p.name)}</h3><p class="project__tagline">${esc(p.tagline)}</p></div>
             </div>
             <p class="project__summary">${esc(p.summary)}</p>
