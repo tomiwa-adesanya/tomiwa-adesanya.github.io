@@ -151,7 +151,7 @@ window.PROJECTS = [
     platforms: ["Windows", "Linux", "macOS"],
     links: { repo: "https://github.com/tomiwa-adesanya/snakeee", source: true, itch: "https://tomiwa-adesanya.itch.io/snakeee" },
     media: [
-      { type: "youtube", id: "L3B7O8-L-Mw", poster: "assets/projects/snakeee/film-poster.webp", label: "Trailer" },
+      { type: "youtube", id: "L3B7O8-L-Mw", poster: "assets/projects/snakeee/film-poster.jpg", label: "Trailer" },
       { type: "video", src: "assets/projects/snakeee/demo.mp4", poster: "assets/projects/snakeee/demo-poster.webp", label: "Gameplay" },
     ],
     release: {
